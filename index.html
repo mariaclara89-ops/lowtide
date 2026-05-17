@@ -38,9 +38,7 @@
     /* ── NAV ── */
     nav {
       position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
+      top: 0; left: 0; right: 0;
       z-index: 100;
       display: flex;
       align-items: center;
@@ -68,7 +66,7 @@
     }
 
     .nav-links a {
-      font-size: 0.8rem;
+      font-size: 0.78rem;
       letter-spacing: 0.12em;
       text-transform: uppercase;
       color: var(--deep-soft);
@@ -79,7 +77,7 @@
     .nav-links a:hover { color: var(--terra); }
 
     .nav-cta {
-      font-size: 0.78rem;
+      font-size: 0.76rem;
       letter-spacing: 0.1em;
       text-transform: uppercase;
       color: var(--white) !important;
@@ -89,7 +87,7 @@
       transition: background 0.2s, transform 0.2s !important;
     }
 
-    .nav-cta:hover { background: var(--terra-soft) !important; color: var(--white) !important; transform: translateY(-1px); }
+    .nav-cta:hover { background: var(--terra-soft) !important; transform: translateY(-1px); }
 
     /* ── HERO ── */
     .hero {
@@ -99,7 +97,7 @@
       align-items: center;
       justify-content: center;
       text-align: center;
-      padding: 8rem 2rem 4rem;
+      padding: 9rem 2rem 6rem;
       position: relative;
       background: linear-gradient(170deg, var(--mist) 0%, var(--sand) 42%, var(--sand-dark) 100%);
       overflow: hidden;
@@ -108,45 +106,45 @@
     .hero-bg-circle {
       position: absolute;
       border-radius: 50%;
-      opacity: 0.18;
+      opacity: 0.15;
       pointer-events: none;
     }
 
     .hero-bg-circle--1 {
-      width: 600px; height: 600px;
+      width: 640px; height: 640px;
       background: var(--seafoam);
-      top: -120px; right: -160px;
+      top: -140px; right: -180px;
     }
 
     .hero-bg-circle--2 {
-      width: 340px; height: 340px;
+      width: 360px; height: 360px;
       background: var(--sky);
-      bottom: 80px; left: -80px;
+      bottom: 60px; left: -100px;
     }
 
     .hero-bg-circle--3 {
       width: 200px; height: 200px;
       background: var(--terra);
-      bottom: 140px; right: 10%;
-      opacity: 0.1;
+      bottom: 160px; right: 9%;
+      opacity: 0.08;
     }
 
     .hero-eyebrow {
-      font-size: 0.72rem;
-      letter-spacing: 0.2em;
+      font-size: 0.7rem;
+      letter-spacing: 0.22em;
       text-transform: uppercase;
       color: var(--seafoam);
-      margin-bottom: 1.6rem;
+      margin-bottom: 2rem;
     }
 
     .hero h1 {
       font-family: 'Cormorant Garamond', serif;
-      font-size: clamp(3rem, 7vw, 5.5rem);
+      font-size: clamp(3.2rem, 8vw, 6rem);
       font-weight: 300;
-      line-height: 1.1;
+      line-height: 1.05;
       color: var(--deep);
       max-width: 800px;
-      margin-bottom: 0.4rem;
+      margin-bottom: 0.5rem;
     }
 
     .hero h1 em {
@@ -160,17 +158,17 @@
       font-weight: 300;
       font-style: italic;
       color: var(--terra);
-      margin-bottom: 2rem;
+      margin-bottom: 2.4rem;
       letter-spacing: 0.02em;
     }
 
     .hero-desc {
-      max-width: 520px;
+      max-width: 500px;
       font-size: 1rem;
       color: var(--deep-soft);
       font-weight: 300;
-      margin-bottom: 2.8rem;
-      line-height: 1.8;
+      margin-bottom: 3rem;
+      line-height: 1.9;
     }
 
     .hero-actions {
@@ -186,7 +184,7 @@
       background: var(--terra);
       color: var(--white);
       border-radius: 2rem;
-      font-size: 0.82rem;
+      font-size: 0.8rem;
       letter-spacing: 0.1em;
       text-transform: uppercase;
       text-decoration: none;
@@ -201,7 +199,7 @@
       border: 1px solid var(--seafoam);
       color: var(--seafoam);
       border-radius: 2rem;
-      font-size: 0.82rem;
+      font-size: 0.8rem;
       letter-spacing: 0.1em;
       text-transform: uppercase;
       text-decoration: none;
@@ -211,16 +209,11 @@
     .btn-secondary:hover { background: var(--seafoam); color: var(--white); transform: translateY(-2px); }
 
     /* Wave divider */
-    .wave-divider {
-      width: 100%;
-      overflow: hidden;
-      line-height: 0;
-    }
-
+    .wave-divider { width: 100%; overflow: hidden; line-height: 0; }
     .wave-divider svg { display: block; }
 
     /* ── SECTIONS ── */
-    section { padding: 6rem 2rem; }
+    section { padding: 7rem 2rem; }
 
     .container {
       max-width: 1100px;
@@ -228,16 +221,16 @@
     }
 
     .container--narrow {
-      max-width: 700px;
+      max-width: 660px;
       margin: 0 auto;
     }
 
     .section-label {
-      font-size: 0.68rem;
-      letter-spacing: 0.22em;
+      font-size: 0.65rem;
+      letter-spacing: 0.24em;
       text-transform: uppercase;
       color: var(--terra);
-      margin-bottom: 1.2rem;
+      margin-bottom: 1.4rem;
     }
 
     .section-heading {
@@ -246,7 +239,7 @@
       font-weight: 300;
       line-height: 1.2;
       color: var(--deep);
-      margin-bottom: 1.4rem;
+      margin-bottom: 1.6rem;
     }
 
     .section-heading em { font-style: italic; color: var(--seafoam); }
@@ -255,24 +248,26 @@
       font-size: 1rem;
       color: var(--deep-soft);
       font-weight: 300;
-      line-height: 1.9;
+      line-height: 1.95;
     }
 
     /* ── PHILOSOPHY ── */
-    .philosophy {
-      background: var(--white);
-    }
+    .philosophy { background: var(--white); }
 
     .philosophy-inner {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 5rem;
-      align-items: center;
+      gap: 6rem;
+      align-items: start;
+    }
+
+    .philosophy-text .section-body + .section-body {
+      margin-top: 1.4rem;
     }
 
     .philosophy-visual {
       position: relative;
-      height: 420px;
+      height: 440px;
     }
 
     .philosophy-circle {
@@ -281,68 +276,66 @@
     }
 
     .philosophy-circle--1 {
-      width: 300px; height: 300px;
+      width: 320px; height: 320px;
       background: linear-gradient(135deg, var(--mist), var(--seafoam));
-      opacity: 0.5;
-      top: 40px; left: 20px;
+      opacity: 0.45;
+      top: 30px; left: 10px;
     }
 
     .philosophy-circle--2 {
-      width: 180px; height: 180px;
+      width: 190px; height: 190px;
       background: linear-gradient(135deg, var(--sand-dark), var(--terra-soft));
-      opacity: 0.4;
-      bottom: 30px; right: 30px;
+      opacity: 0.38;
+      bottom: 40px; right: 20px;
     }
 
-    .philosophy-quote {
+    .philosophy-pull {
       position: absolute;
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      width: 260px;
+      width: 270px;
       text-align: center;
       font-family: 'Cormorant Garamond', serif;
-      font-size: 1.5rem;
+      font-size: 1.45rem;
       font-style: italic;
       font-weight: 300;
       color: var(--deep);
-      line-height: 1.4;
+      line-height: 1.45;
       z-index: 1;
     }
 
     /* ── SESSIONS ── */
-    .sessions {
-      background: var(--sand);
-    }
+    .sessions { background: var(--sand); }
 
     .sessions-header {
       text-align: center;
-      max-width: 600px;
-      margin: 0 auto 4rem;
+      max-width: 560px;
+      margin: 0 auto 5rem;
     }
 
     .sessions-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 1.5rem;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.8rem;
     }
 
     .session-card {
       background: var(--white);
       border-radius: 1.2rem;
-      padding: 2.4rem 2rem;
+      padding: 2.8rem 2.2rem;
       position: relative;
       overflow: hidden;
-      transition: transform 0.25s;
+      transition: transform 0.3s;
     }
 
-    .session-card:hover { transform: translateY(-4px); }
+    .session-card:hover { transform: translateY(-5px); }
 
     .session-card::before {
       content: '';
       position: absolute;
       top: 0; left: 0; right: 0;
-      height: 3px;
+      height: 2px;
       background: linear-gradient(90deg, var(--seafoam), var(--sky));
     }
 
@@ -350,25 +343,19 @@
       background: linear-gradient(90deg, var(--terra), var(--terra-soft));
     }
 
-    .session-icon {
-      font-size: 1.8rem;
-      margin-bottom: 1.2rem;
-      display: block;
-    }
-
     .session-card h3 {
       font-family: 'Cormorant Garamond', serif;
-      font-size: 1.35rem;
+      font-size: 1.5rem;
       font-weight: 400;
       color: var(--deep);
-      margin-bottom: 0.7rem;
+      margin-bottom: 1rem;
     }
 
     .session-card p {
-      font-size: 0.9rem;
+      font-size: 0.92rem;
       color: var(--deep-soft);
       font-weight: 300;
-      line-height: 1.7;
+      line-height: 1.8;
     }
 
     /* ── EXPERIENCE ── */
@@ -384,126 +371,107 @@
     .experience-inner {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 5rem;
+      gap: 6rem;
       align-items: center;
     }
 
     .experience-list {
       list-style: none;
-      margin-top: 2rem;
+      margin-top: 2.4rem;
     }
 
     .experience-list li {
       display: flex;
       align-items: flex-start;
       gap: 1rem;
-      padding: 1rem 0;
-      border-bottom: 1px solid rgba(127, 166, 154, 0.15);
+      padding: 1.1rem 0;
+      border-bottom: 1px solid rgba(127, 166, 154, 0.12);
       font-size: 0.95rem;
-      color: rgba(244, 237, 228, 0.8);
+      color: rgba(244, 237, 228, 0.78);
       font-weight: 300;
+      line-height: 1.6;
     }
 
     .experience-list li:last-child { border-bottom: none; }
 
     .experience-list li::before {
-      content: '∿';
+      content: '~';
       color: var(--seafoam);
-      font-size: 1.2rem;
-      line-height: 1.4;
+      font-size: 1rem;
+      line-height: 1.7;
       flex-shrink: 0;
+      letter-spacing: -0.05em;
+    }
+
+    .experience-replay {
+      margin-top: 1.8rem;
+      font-size: 0.85rem;
+      color: rgba(244, 237, 228, 0.45);
+      font-weight: 300;
+      font-style: italic;
     }
 
     .experience-visual {
       display: flex;
       flex-direction: column;
-      gap: 1.2rem;
+      gap: 1.4rem;
     }
 
-    .experience-stat {
-      background: rgba(127, 166, 154, 0.12);
-      border: 1px solid rgba(127, 166, 154, 0.2);
+    .experience-card {
+      background: rgba(127, 166, 154, 0.1);
+      border: 1px solid rgba(127, 166, 154, 0.18);
       border-radius: 1rem;
-      padding: 1.6rem 2rem;
+      padding: 2rem 2.2rem;
     }
 
-    .experience-stat-num {
+    .experience-card-title {
       font-family: 'Cormorant Garamond', serif;
-      font-size: 2.8rem;
+      font-size: 1.5rem;
       font-weight: 300;
+      font-style: italic;
       color: var(--mist);
-      line-height: 1;
       margin-bottom: 0.3rem;
     }
 
-    .experience-stat-label {
-      font-size: 0.8rem;
+    .experience-card-sub {
+      font-size: 0.78rem;
       letter-spacing: 0.08em;
-      color: rgba(244, 237, 228, 0.55);
+      color: rgba(244, 237, 228, 0.4);
       font-weight: 300;
     }
 
-    /* ── FOR YOU ── */
-    .for-you {
+    /* ── IF THIS RESONATES ── */
+    .resonates {
       background: linear-gradient(160deg, var(--sand-dark) 0%, var(--sand) 100%);
       text-align: center;
     }
 
-    .for-you-grid {
+    .resonates-header { max-width: 560px; margin: 0 auto 4rem; }
+
+    .resonates-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 1rem;
-      margin-top: 3rem;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1.2rem;
     }
 
-    .for-you-item {
+    .resonates-card {
       background: var(--white);
       border-radius: 1rem;
-      padding: 1.6rem 1.4rem;
-      font-size: 0.9rem;
-      color: var(--deep-soft);
-      font-weight: 300;
-      line-height: 1.6;
-      border-left: 3px solid var(--seafoam);
-      text-align: left;
-    }
-
-    /* ── TESTIMONIALS ── */
-    .testimonials {
-      background: var(--white);
+      padding: 2.4rem 1.8rem;
       text-align: center;
     }
 
-    .testimonials-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 1.5rem;
-      margin-top: 3rem;
-    }
-
-    .testimonial-card {
-      background: var(--sand);
-      border-radius: 1.2rem;
-      padding: 2.2rem;
-      text-align: left;
-    }
-
-    .testimonial-quote {
+    .resonates-card-text {
       font-family: 'Cormorant Garamond', serif;
-      font-size: 1.1rem;
-      font-style: italic;
+      font-size: 1.25rem;
+      font-weight: 300;
       color: var(--deep);
-      line-height: 1.7;
-      margin-bottom: 1.2rem;
+      line-height: 1.4;
     }
 
-    .testimonial-quote::before { content: '\201C'; color: var(--terra); font-size: 1.4rem; }
-    .testimonial-quote::after  { content: '\201D'; color: var(--terra); font-size: 1.4rem; }
-
-    .testimonial-name {
-      font-size: 0.75rem;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
+    .resonates-card-text em {
+      display: block;
+      font-style: italic;
       color: var(--seafoam);
     }
 
@@ -514,11 +482,11 @@
     }
 
     .join .section-heading { color: var(--white); }
-    .join .section-label { color: rgba(255,255,255,0.7); }
-    .join .section-body { color: rgba(255,255,255,0.82); }
+    .join .section-label { color: rgba(255,255,255,0.65); }
+    .join .section-body { color: rgba(255,255,255,0.8); }
 
     .join-form {
-      margin-top: 2.5rem;
+      margin-top: 2.8rem;
       display: flex;
       gap: 0.8rem;
       justify-content: center;
@@ -526,26 +494,23 @@
     }
 
     .join-form input {
-      flex: 1 1 260px;
-      max-width: 340px;
+      flex: 1 1 240px;
+      max-width: 300px;
       padding: 0.9rem 1.4rem;
       border-radius: 2rem;
-      border: 1px solid rgba(255,255,255,0.4);
-      background: rgba(255,255,255,0.2);
+      border: 1px solid rgba(255,255,255,0.35);
+      background: rgba(255,255,255,0.18);
       color: var(--white);
       font-family: 'DM Sans', sans-serif;
       font-size: 0.9rem;
       outline: none;
       backdrop-filter: blur(6px);
       -webkit-backdrop-filter: blur(6px);
+      transition: border-color 0.2s, background 0.2s;
     }
 
-    .join-form input::placeholder { color: rgba(255,255,255,0.65); }
-
-    .join-form input:focus {
-      border-color: rgba(255,255,255,0.8);
-      background: rgba(255,255,255,0.28);
-    }
+    .join-form input::placeholder { color: rgba(255,255,255,0.6); }
+    .join-form input:focus { border-color: rgba(255,255,255,0.75); background: rgba(255,255,255,0.26); }
 
     .btn-white {
       display: inline-block;
@@ -553,7 +518,7 @@
       background: var(--white);
       color: var(--deep);
       border-radius: 2rem;
-      font-size: 0.82rem;
+      font-size: 0.8rem;
       letter-spacing: 0.1em;
       text-transform: uppercase;
       border: none;
@@ -562,27 +527,23 @@
       transition: transform 0.2s, opacity 0.2s;
     }
 
-    .btn-white:hover { transform: translateY(-2px); opacity: 0.92; }
+    .btn-white:hover { transform: translateY(-2px); opacity: 0.9; }
 
     .join-note {
-      margin-top: 1.2rem;
+      margin-top: 1.4rem;
       font-size: 0.78rem;
-      color: rgba(255,255,255,0.6);
+      color: rgba(255,255,255,0.5);
       letter-spacing: 0.04em;
     }
 
     /* ── FOOTER ── */
     footer {
       background: var(--deep);
-      color: rgba(244, 237, 228, 0.5);
-      padding: 3rem 2rem;
+      padding: 3.5rem 2rem;
       text-align: center;
     }
 
-    .footer-inner {
-      max-width: 700px;
-      margin: 0 auto;
-    }
+    .footer-inner { max-width: 700px; margin: 0 auto; }
 
     .footer-logo {
       font-family: 'Cormorant Garamond', serif;
@@ -593,10 +554,10 @@
     }
 
     .footer-tagline {
-      font-size: 0.78rem;
-      letter-spacing: 0.14em;
-      margin-bottom: 2rem;
-      color: rgba(244,237,228,0.4);
+      font-size: 0.76rem;
+      letter-spacing: 0.16em;
+      margin-bottom: 2.2rem;
+      color: rgba(244,237,228,0.35);
     }
 
     .footer-links {
@@ -604,15 +565,15 @@
       justify-content: center;
       gap: 2rem;
       list-style: none;
-      margin-bottom: 2rem;
+      margin-bottom: 2.2rem;
       flex-wrap: wrap;
     }
 
     .footer-links a {
-      font-size: 0.75rem;
+      font-size: 0.72rem;
       letter-spacing: 0.1em;
       text-transform: uppercase;
-      color: rgba(244,237,228,0.45);
+      color: rgba(244,237,228,0.38);
       text-decoration: none;
       transition: color 0.2s;
     }
@@ -620,35 +581,39 @@
     .footer-links a:hover { color: var(--terra-soft); }
 
     .footer-copy {
-      font-size: 0.72rem;
-      color: rgba(244,237,228,0.25);
+      font-size: 0.7rem;
+      color: rgba(244,237,228,0.2);
     }
 
     /* ── RESPONSIVE ── */
+    @media (max-width: 1000px) {
+      .sessions-grid { grid-template-columns: 1fr; }
+      .resonates-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+
     @media (max-width: 900px) {
       nav { padding: 1.2rem 2rem; }
       .nav-links { gap: 1.4rem; }
 
       .philosophy-inner,
-      .experience-inner {
-        grid-template-columns: 1fr;
-        gap: 3rem;
-      }
+      .experience-inner { grid-template-columns: 1fr; gap: 3.5rem; }
 
-      .philosophy-visual { height: 280px; }
+      .philosophy-visual { height: 300px; }
+      .sessions-grid { grid-template-columns: 1fr; }
     }
 
     @media (max-width: 600px) {
       nav { padding: 1rem 1.4rem; }
       .nav-links { display: none; }
-      section { padding: 4rem 1.4rem; }
+      section { padding: 5rem 1.4rem; }
+      .resonates-grid { grid-template-columns: 1fr 1fr; }
     }
 
     /* ── SCROLL ANIMATIONS ── */
     .fade-up {
       opacity: 0;
-      transform: translateY(28px);
-      transition: opacity 0.7s ease, transform 0.7s ease;
+      transform: translateY(24px);
+      transition: opacity 0.75s ease, transform 0.75s ease;
     }
 
     .fade-up.visible {
@@ -665,8 +630,8 @@
     <ul class="nav-links">
       <li><a href="#philosophy">Philosophy</a></li>
       <li><a href="#sessions">Sessions</a></li>
-      <li><a href="#experience">What to Expect</a></li>
-      <li><a href="#join" class="nav-cta">Join a Session</a></li>
+      <li><a href="#experience">Inside</a></li>
+      <li><a href="#join" class="nav-cta">Enter Low Tide</a></li>
     </ul>
   </nav>
 
@@ -676,7 +641,7 @@
     <div class="hero-bg-circle hero-bg-circle--2"></div>
     <div class="hero-bg-circle hero-bg-circle--3"></div>
 
-    <p class="hero-eyebrow fade-up">Breathwork · Nervous System · Slow Movement</p>
+    <p class="hero-eyebrow fade-up">Breathwork · Meditation · Gentle Movement</p>
 
     <h1 class="fade-up">
       Low<br /><em>Tide</em>
@@ -685,13 +650,12 @@
     <p class="hero-tagline fade-up">Presence without pressure</p>
 
     <p class="hero-desc fade-up">
-      Live online group sessions for women who are ready to slow down,
-      come home to themselves, and breathe — without needing to perform,
-      keep up, or be anything other than they already are.
+      Gentle online group sessions and workshops for slowing down,
+      reconnecting, and returning to yourself — at your own pace.
     </p>
 
     <div class="hero-actions fade-up">
-      <a href="#join" class="btn-primary">Reserve Your Spot</a>
+      <a href="#join" class="btn-primary">Enter Low Tide</a>
       <a href="#sessions" class="btn-secondary">Learn More</a>
     </div>
   </section>
@@ -711,30 +675,50 @@
         <div class="philosophy-text fade-up">
           <p class="section-label">The Philosophy</p>
           <h2 class="section-heading">When the tide pulls back, <em>space opens</em></h2>
+
           <p class="section-body">
-            The ocean doesn't apologise for its tides. Low tide isn't a failure —
-            it's a reveal. When the water recedes, what was hidden becomes visible:
-            the texture of the seabed, the quiet life beneath the surface.
+            The ocean does not resist its tides.<br />
+            Low tide is not a failure — it is part of the rhythm.
           </p>
-          <br />
+
           <p class="section-body">
-            Slowing down works the same way. Not as giving up, but as creating the
-            conditions for something real to emerge. Low Tide is a practice of
-            intentional deceleration — stepping out of the noise of wellness culture
-            that demands constant optimisation, and returning instead to the body,
-            the breath, and the present moment.
+            When the water recedes, what was hidden becomes visible:
+            the texture beneath the surface, the quiet life usually unseen,
+            the space that was always there.
           </p>
-          <br />
+
           <p class="section-body">
-            This is not a place to achieve. It is a place to arrive.
+            Slowing down can feel the same.
+          </p>
+
+          <p class="section-body">
+            Not as giving up, but as returning.
+            Returning to the body, the breath, and the present moment.
+            Creating enough space to listen to ourselves again.
+          </p>
+
+          <p class="section-body">
+            Low Tide was created as a softer response to a world that
+            constantly asks us to do more, improve more, become more.
+          </p>
+
+          <p class="section-body">
+            Here, nothing needs to be earned.<br />
+            Rest is not falling behind.<br />
+            Presence is enough.
+          </p>
+
+          <p class="section-body" style="margin-top: 1.4rem; font-style: italic; font-family: 'Cormorant Garamond', serif; font-size: 1.05rem; color: var(--deep);">
+            This is not a place to perform.<br />
+            It is a place to arrive.
           </p>
         </div>
 
         <div class="philosophy-visual fade-up">
           <div class="philosophy-circle philosophy-circle--1"></div>
           <div class="philosophy-circle philosophy-circle--2"></div>
-          <p class="philosophy-quote">
-            "The antidote to overwhelm is not doing more — it's learning to be."
+          <p class="philosophy-pull">
+            "When the water recedes, what was hidden becomes visible."
           </p>
         </div>
 
@@ -747,46 +731,37 @@
     <div class="container">
       <div class="sessions-header fade-up">
         <p class="section-label">What We Practise</p>
-        <h2 class="section-heading">Four doorways <em>back to yourself</em></h2>
+        <h2 class="section-heading">Three ways <em>back to yourself</em></h2>
         <p class="section-body">
-          Each session weaves together one or more of these practices — always gently, always at your pace.
+          Gentle practices to help you slow down, reconnect, and come back to yourself.
         </p>
       </div>
 
       <div class="sessions-grid">
         <div class="session-card fade-up">
-          <span class="session-icon">○</span>
           <h3>Breathwork</h3>
           <p>
-            Guided breath practices drawn from somatic and nervous system traditions.
-            Accessible for all levels — no experience needed, just a willingness to breathe.
+            Gentle guided breath practices designed to create space within
+            the body and mind. A way to slow down, soften, and reconnect
+            with the present moment — one breath at a time.
           </p>
         </div>
 
         <div class="session-card session-card--terra fade-up">
-          <span class="session-icon">∿</span>
-          <h3>Nervous System Regulation</h3>
+          <h3>Meditation</h3>
           <p>
-            Practices rooted in polyvagal theory that help your body find its way
-            back to a felt sense of safety — gently, without force.
+            Soft, awareness-based meditation focused on presence rather
+            than perfection. Not about emptying the mind, but learning
+            to sit with yourself more gently.
           </p>
         </div>
 
         <div class="session-card fade-up">
-          <span class="session-icon">◌</span>
-          <h3>Meditation</h3>
+          <h3>Gentle Movement</h3>
           <p>
-            Soft, open-awareness meditation. Not about emptying the mind,
-            but learning to rest with what's here — thoughts, sensations, and all.
-          </p>
-        </div>
-
-        <div class="session-card session-card--terra fade-up">
-          <span class="session-icon">≈</span>
-          <h3>Slow Movement</h3>
-          <p>
-            Gentle, embodied movement — part somatic yoga, part intuitive flow.
-            Designed to help you reconnect with your body, not perform for it.
+            Slow, intuitive movement inspired by yoga and embodied awareness.
+            An invitation to reconnect with your body through softness,
+            presence, and ease — never performance.
           </p>
         </div>
       </div>
@@ -806,35 +781,35 @@
       <div class="experience-inner">
 
         <div class="fade-up">
-          <p class="section-label">What to Expect</p>
+          <p class="section-label">Inside Low Tide</p>
           <h2 class="section-heading" style="color:var(--sand);">A session that <em style="color:var(--mist);">feels like exhaling</em></h2>
           <p class="section-body">
-            Live online group sessions held in a small, intimate space.
-            Nothing to perform. Nowhere to rush to. Just an hour to arrive.
+            Gentle online sessions designed to help you slow down, soften,
+            and return to yourself. Nothing to perform. Nothing to keep up with.
+            Just space to arrive.
           </p>
 
           <ul class="experience-list">
-            <li>Camera on or off — entirely your choice, always</li>
-            <li>No need to speak, introduce yourself, or share</li>
-            <li>Gentle guidance with space to do things your own way</li>
-            <li>Sessions begin and end on time, respecting your day</li>
-            <li>Small group size for a sense of shared quiet</li>
-            <li>Replay available if you can't make it live</li>
+            <li>Cameras on or off — entirely your choice</li>
+            <li>No pressure to speak or share</li>
+            <li>Gentle guidance, always at your own pace</li>
           </ul>
+
+          <p class="experience-replay">Replay available if you need more space with it.</p>
         </div>
 
         <div class="experience-visual fade-up">
-          <div class="experience-stat">
-            <div class="experience-stat-num">60</div>
-            <div class="experience-stat-label">Minutes per session</div>
+          <div class="experience-card">
+            <div class="experience-card-title">A space to pause</div>
+            <div class="experience-card-sub">60-minute live sessions</div>
           </div>
-          <div class="experience-stat">
-            <div class="experience-stat-num">≤ 12</div>
-            <div class="experience-stat-label">Participants per session</div>
+          <div class="experience-card">
+            <div class="experience-card-title">Quiet, intimate</div>
+            <div class="experience-card-sub">Small groups, held gently</div>
           </div>
-          <div class="experience-stat">
-            <div class="experience-stat-num">0</div>
-            <div class="experience-stat-label">Expectations of you</div>
+          <div class="experience-card">
+            <div class="experience-card-title">Come as you are</div>
+            <div class="experience-card-sub">No experience needed</div>
           </div>
         </div>
 
@@ -849,53 +824,34 @@
     </svg>
   </div>
 
-  <!-- FOR YOU -->
-  <section class="for-you" id="for-you">
+  <!-- IF THIS RESONATES -->
+  <section class="resonates" id="resonates">
     <div class="container">
-      <div class="fade-up">
-        <p class="section-label">This Is For You If…</p>
-        <h2 class="section-heading">You're tired of wellness that <em>demands more</em></h2>
+      <div class="resonates-header fade-up">
+        <p class="section-label">If This Resonates</p>
+        <h2 class="section-heading">You're tired of wellness that <em>asks you to become more</em></h2>
       </div>
 
-      <div class="for-you-grid">
-        <div class="for-you-item fade-up">You feel overwhelmed or burnt out, and the idea of another intense practice makes it worse</div>
-        <div class="for-you-item fade-up">You've been disconnected from your body and want to find your way back, gently</div>
-        <div class="for-you-item fade-up">You crave community but feel exhausted by the pressure to show up a certain way</div>
-        <div class="for-you-item fade-up">You're curious about breathwork or meditation but find mainstream content too fast-paced</div>
-        <div class="for-you-item fade-up">You're in a season of life that calls for softness, not striving</div>
-        <div class="for-you-item fade-up">You just want an hour that belongs entirely to you</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- TESTIMONIALS -->
-  <section class="testimonials" id="testimonials">
-    <div class="container">
-      <div class="fade-up">
-        <p class="section-label">From the Community</p>
-        <h2 class="section-heading">What women are <em>saying</em></h2>
-      </div>
-
-      <div class="testimonials-grid">
-        <div class="testimonial-card fade-up">
-          <p class="testimonial-quote">
-            I've tried so many wellness things that made me feel like I was failing. This felt like the first time I was just… allowed to be there.
+      <div class="resonates-grid">
+        <div class="resonates-card fade-up">
+          <p class="resonates-card-text">
+            Less pressure<br /><em>More presence</em>
           </p>
-          <p class="testimonial-name">— Maya, 34</p>
         </div>
-
-        <div class="testimonial-card fade-up">
-          <p class="testimonial-quote">
-            I didn't realise how much I needed to exhale until I actually did it. Something in me settled that had been tight for a long time.
+        <div class="resonates-card fade-up">
+          <p class="resonates-card-text">
+            A softer way<br /><em>to reconnect</em>
           </p>
-          <p class="testimonial-name">— Priya, 41</p>
         </div>
-
-        <div class="testimonial-card fade-up">
-          <p class="testimonial-quote">
-            The camera off option changed everything for me. I was able to actually arrive instead of performing. I'll be back every week.
+        <div class="resonates-card fade-up">
+          <p class="resonates-card-text">
+            Space to breathe<br /><em>without performing</em>
           </p>
-          <p class="testimonial-name">— Joanna, 29</p>
+        </div>
+        <div class="resonates-card fade-up">
+          <p class="resonates-card-text">
+            Slowing down<br /><em>without falling behind</em>
+          </p>
         </div>
       </div>
     </div>
@@ -904,22 +860,22 @@
   <!-- JOIN -->
   <section class="join" id="join">
     <div class="container--narrow fade-up">
-      <p class="section-label">Join a Session</p>
-      <h2 class="section-heading" style="font-size: clamp(2rem, 4vw, 2.8rem);">Ready to breathe?</h2>
+      <p class="section-label">Enter Low Tide</p>
+      <h2 class="section-heading">Ready to breathe?</h2>
       <p class="section-body">
-        Drop your email below and we'll send you upcoming session dates,
-        along with everything you need to know before you arrive.
-        No commitment. No pressure. Just an open door.
+        Leave your email and we'll gently keep you updated on upcoming
+        sessions and future openings. No pressure. No urgency.
+        Just an open door whenever you feel ready.
       </p>
 
       <form class="join-form" onsubmit="handleJoin(event)">
         <input type="text" placeholder="Your first name" name="name" autocomplete="given-name" />
         <input type="email" placeholder="Your email address" name="email" required autocomplete="email" />
-        <button type="submit" class="btn-white">Send me dates</button>
+        <button type="submit" class="btn-white">Keep me posted</button>
       </form>
 
       <p class="join-note" id="join-confirmation"></p>
-      <p class="join-note" style="margin-top: 0.5rem;">We'll never share your details. Unsubscribe any time.</p>
+      <p class="join-note" style="margin-top:0.5rem;">We'll never share your details. Unsubscribe any time.</p>
     </div>
   </section>
 
@@ -931,8 +887,8 @@
       <ul class="footer-links">
         <li><a href="#philosophy">Philosophy</a></li>
         <li><a href="#sessions">Sessions</a></li>
-        <li><a href="#experience">What to Expect</a></li>
-        <li><a href="#join">Join</a></li>
+        <li><a href="#experience">Inside</a></li>
+        <li><a href="#join">Enter</a></li>
         <li><a href="#">Instagram</a></li>
       </ul>
       <p class="footer-copy">&copy; 2026 Low Tide. All rights reserved.</p>
@@ -940,7 +896,6 @@
   </footer>
 
   <script>
-    // Scroll fade-in
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry, i) => {
         if (entry.isIntersecting) {
@@ -948,16 +903,15 @@
           observer.unobserve(entry.target);
         }
       });
-    }, { threshold: 0.12 });
+    }, { threshold: 0.1 });
 
     document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
 
-    // Join form
     function handleJoin(e) {
       e.preventDefault();
-      const confirmation = document.getElementById('join-confirmation');
-      confirmation.textContent = 'Thank you — we\'ll be in touch with upcoming session dates.';
-      confirmation.style.color = 'rgba(255,255,255,0.9)';
+      const msg = document.getElementById('join-confirmation');
+      msg.textContent = 'Thank you — we\'ll be in touch gently.';
+      msg.style.color = 'rgba(255,255,255,0.9)';
       e.target.reset();
     }
   </script>
