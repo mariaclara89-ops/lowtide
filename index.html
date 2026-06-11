@@ -305,8 +305,137 @@
       z-index: 1;
     }
 
+    /* ── ABOUT ── */
+    .about { background: var(--sand); }
+
+    .about-inner {
+      display: grid;
+      grid-template-columns: 380px 1fr;
+      gap: 6rem;
+      align-items: start;
+    }
+
+    .about-photo-wrap {
+      position: sticky;
+      top: 7rem;
+    }
+
+    .about-photo {
+      width: 100%;
+      aspect-ratio: 3 / 4;
+      border-radius: 1.4rem;
+      overflow: hidden;
+      background: linear-gradient(160deg, var(--mist) 0%, var(--sand-dark) 60%, var(--stone) 100%);
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+      position: relative;
+    }
+
+    .about-photo img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .about-photo-placeholder {
+      position: absolute;
+      inset: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: 0.6rem;
+    }
+
+    .about-photo-placeholder span {
+      font-size: 0.65rem;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: rgba(42, 58, 59, 0.3);
+    }
+
+    .about-photo-dot {
+      width: 40px; height: 40px;
+      border-radius: 50%;
+      border: 1px solid rgba(42, 58, 59, 0.15);
+    }
+
+    .about-name-block {
+      margin-top: 1.4rem;
+    }
+
+    .about-name {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.5rem;
+      font-weight: 400;
+      color: var(--deep);
+      margin-bottom: 0.2rem;
+    }
+
+    .about-sub {
+      font-size: 0.72rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--seafoam);
+    }
+
+    .about-text { }
+
+    .about-text .section-label { margin-bottom: 1.8rem; }
+
+    .about-opening {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: clamp(1.7rem, 3vw, 2.4rem);
+      font-weight: 300;
+      line-height: 1.2;
+      color: var(--deep);
+      margin-bottom: 2.4rem;
+    }
+
+    .about-body {
+      font-size: 0.97rem;
+      color: var(--deep-soft);
+      font-weight: 300;
+      line-height: 1.95;
+      margin-bottom: 1.2rem;
+    }
+
+    .about-pull {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.25rem;
+      font-style: italic;
+      font-weight: 300;
+      color: var(--deep);
+      line-height: 1.5;
+      margin: 2rem 0;
+      padding-left: 1.6rem;
+      border-left: 2px solid var(--terra);
+    }
+
+    .about-credentials {
+      margin-top: 2.4rem;
+      padding-top: 2rem;
+      border-top: 1px solid var(--stone);
+      font-size: 0.82rem;
+      color: rgba(42, 58, 59, 0.45);
+      font-weight: 300;
+      line-height: 1.8;
+    }
+
+    .about-closing {
+      margin-top: 2rem;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.15rem;
+      font-style: italic;
+      font-weight: 300;
+      color: var(--deep);
+      line-height: 1.6;
+    }
+
     /* ── SESSIONS ── */
-    .sessions { background: var(--sand); }
+    .sessions { background: var(--white); }
 
     .sessions-header {
       text-align: center;
@@ -589,6 +718,9 @@
     @media (max-width: 1000px) {
       .sessions-grid { grid-template-columns: 1fr; }
       .resonates-grid { grid-template-columns: repeat(2, 1fr); }
+      .about-inner { grid-template-columns: 1fr; gap: 3rem; }
+      .about-photo-wrap { position: static; }
+      .about-photo { aspect-ratio: 4 / 3; max-width: 420px; }
     }
 
     @media (max-width: 900px) {
@@ -629,6 +761,7 @@
     <a class="nav-logo" href="#">Low Tide</a>
     <ul class="nav-links">
       <li><a href="#philosophy">Philosophy</a></li>
+      <li><a href="#about">About</a></li>
       <li><a href="#sessions">Sessions</a></li>
       <li><a href="#experience">Inside</a></li>
       <li><a href="#join" class="nav-cta">Enter Low Tide</a></li>
@@ -725,6 +858,106 @@
       </div>
     </div>
   </section>
+
+  <!-- ABOUT -->
+  <section class="about" id="about">
+    <div class="container">
+      <div class="about-inner">
+
+        <!-- Photo + name -->
+        <div class="about-photo-wrap fade-up">
+          <div class="about-photo">
+            <!-- Replace the placeholder below with: <img src="your-photo.jpg" alt="Clara" /> -->
+            <div class="about-photo-placeholder">
+              <div class="about-photo-dot"></div>
+              <span>Photo coming</span>
+            </div>
+          </div>
+          <div class="about-name-block">
+            <p class="about-name">Clara</p>
+            <p class="about-sub">Founder, Low Tide</p>
+          </div>
+        </div>
+
+        <!-- Text -->
+        <div class="about-text fade-up">
+          <p class="section-label">About</p>
+          <h2 class="about-opening">Hi, I'm Clara.</h2>
+
+          <p class="about-body">
+            For most of my life, movement has been how I reconnect with myself.
+          </p>
+
+          <p class="about-body">
+            I started dancing when I was 11 years old, and over the years I found different
+            ways of coming back to that feeling of presence — first through movement, then
+            through yoga, and later through surfing after moving to Portugal.
+          </p>
+
+          <p class="about-body">
+            What these practices had in common wasn't performance or achievement.
+            It was the feeling of creating space. Space to slow down, clear my mind,
+            and return to myself.
+          </p>
+
+          <p class="about-body">
+            At the same time, I became increasingly aware of the pressure that surrounds us.
+            The pressure to optimise, improve, do more, and be more. It often feels like there
+            is always another habit to build, another goal to reach, another way we should be
+            taking better care of ourselves.
+          </p>
+
+          <p class="about-body">
+            Even wellbeing can start to feel like something we need to get right.
+          </p>
+
+          <div class="about-pull">
+            A quieter approach.<br />
+            A space to pause, breathe, and reconnect without pressure, performance,
+            or the feeling that you should be doing more.
+          </div>
+
+          <p class="about-body">
+            When an injury kept me out of the ocean for almost a year, I found myself
+            searching for another way to create that same sense of space and reset.
+            Breathwork and meditation became an important part of that journey. They helped
+            me slow down, become more present, and approach life with a little more awareness
+            and a little less urgency.
+          </p>
+
+          <p class="about-body">
+            Today, I combine breathwork, meditation, and gentle movement to help people
+            create small moments of stillness within busy lives.
+          </p>
+
+          <p class="about-body">
+            Not because life needs to be perfect.<br /><br />
+            But because sometimes a few conscious breaths, a few moments of presence,
+            and a little space to listen can change how we feel, how we respond,
+            and how we move through the world.
+          </p>
+
+          <p class="about-credentials">
+            200-hour Yoga Teacher Training, YogaHub Dublin &nbsp;·&nbsp;
+            Breathwork &amp; Meditation Facilitator, Just Breathe London
+          </p>
+
+          <p class="about-closing">
+            If any of this feels familiar, you're in the right place.<br />
+            Welcome to Low Tide.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Wave -->
+  <div class="wave-divider" style="background:var(--sand);">
+    <svg viewBox="0 0 1440 60" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="height:50px;">
+      <path d="M0,30 C360,55 720,5 1080,30 C1260,42 1380,18 1440,30 L1440,60 L0,60 Z" fill="#FDFAF7"/>
+    </svg>
+  </div>
 
   <!-- SESSIONS -->
   <section class="sessions" id="sessions">
@@ -886,6 +1119,7 @@
       <p class="footer-tagline">Presence without pressure</p>
       <ul class="footer-links">
         <li><a href="#philosophy">Philosophy</a></li>
+        <li><a href="#about">About</a></li>
         <li><a href="#sessions">Sessions</a></li>
         <li><a href="#experience">Inside</a></li>
         <li><a href="#join">Enter</a></li>
