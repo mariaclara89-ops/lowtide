@@ -532,12 +532,21 @@
       letter-spacing: -0.05em;
     }
 
-    .experience-replay {
-      margin-top: 1.8rem;
-      font-size: 0.85rem;
-      color: rgba(244, 237, 228, 0.45);
-      font-weight: 300;
+    .experience-stanza {
+      display: flex;
+      flex-direction: column;
+      gap: 0.1rem;
+      margin: 1.8rem 0 0.4rem;
+      padding-left: 0.2rem;
+    }
+
+    .experience-stanza span {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.1rem;
       font-style: italic;
+      font-weight: 300;
+      color: rgba(244, 237, 228, 0.65);
+      line-height: 1.7;
     }
 
     .experience-visual {
@@ -764,7 +773,7 @@
       <li><a href="#about">About</a></li>
       <li><a href="#sessions">Sessions</a></li>
       <li><a href="#experience">Inside</a></li>
-      <li><a href="#join" class="nav-cta">Enter Low Tide</a></li>
+      <li><a href="#join" class="nav-cta">Join Low Tide</a></li>
     </ul>
   </nav>
 
@@ -783,12 +792,12 @@
     <p class="hero-tagline fade-up">Presence without pressure</p>
 
     <p class="hero-desc fade-up">
-      Gentle online group sessions and workshops for slowing down,
+      Gentle group sessions and workshops for slowing down,
       reconnecting, and returning to yourself — at your own pace.
     </p>
 
     <div class="hero-actions fade-up">
-      <a href="#join" class="btn-primary">Enter Low Tide</a>
+      <a href="#join" class="btn-primary">Join Low Tide</a>
       <a href="#sessions" class="btn-secondary">Learn More</a>
     </div>
   </section>
@@ -1017,28 +1026,39 @@
           <p class="section-label">Inside Low Tide</p>
           <h2 class="section-heading" style="color:var(--sand);">A session that <em style="color:var(--mist);">feels like exhaling</em></h2>
           <p class="section-body">
-            Gentle online sessions designed to help you slow down, soften,
-            and return to yourself. Nothing to perform. Nothing to keep up with.
-            Just space to arrive.
+            Gentle sessions designed to help you slow down, soften, and reconnect with yourself.
           </p>
+          <p class="section-body" style="margin-top:1rem;">
+            Each session combines gentle movement, breathwork, and meditation in a way
+            that feels accessible, grounding, and unhurried.
+          </p>
+
+          <div class="experience-stanza">
+            <span>Nothing to perform.</span>
+            <span>Nothing to keep up with.</span>
+            <span>Just space to arrive.</span>
+          </div>
 
           <ul class="experience-list">
             <li>Cameras on or off — entirely your choice</li>
             <li>No pressure to speak or share</li>
             <li>Gentle guidance, always at your own pace</li>
+            <li>Online or in-person, depending on the session</li>
           </ul>
-
-          <p class="experience-replay">Replay available if you need more space with it.</p>
         </div>
 
         <div class="experience-visual fade-up">
           <div class="experience-card">
-            <div class="experience-card-title">A space to pause</div>
-            <div class="experience-card-sub">60-minute live sessions</div>
+            <div class="experience-card-title">Arrive</div>
+            <div class="experience-card-sub">Gentle movement</div>
           </div>
           <div class="experience-card">
-            <div class="experience-card-title">Quiet, intimate</div>
-            <div class="experience-card-sub">Small groups, held gently</div>
+            <div class="experience-card-title">Breathe</div>
+            <div class="experience-card-sub">Breathwork</div>
+          </div>
+          <div class="experience-card">
+            <div class="experience-card-title">Be</div>
+            <div class="experience-card-sub">Meditation</div>
           </div>
           <div class="experience-card">
             <div class="experience-card-title">Come as you are</div>
@@ -1093,7 +1113,7 @@
   <!-- JOIN -->
   <section class="join" id="join">
     <div class="container--narrow fade-up">
-      <p class="section-label">Enter Low Tide</p>
+      <p class="section-label">Join Low Tide</p>
       <h2 class="section-heading">Ready to breathe?</h2>
       <p class="section-body">
         Leave your email and we'll gently keep you updated on upcoming
@@ -1122,7 +1142,7 @@
         <li><a href="#about">About</a></li>
         <li><a href="#sessions">Sessions</a></li>
         <li><a href="#experience">Inside</a></li>
-        <li><a href="#join">Enter</a></li>
+        <li><a href="#join">Join</a></li>
         <li><a href="#">Instagram</a></li>
       </ul>
       <p class="footer-copy">&copy; 2026 Low Tide. All rights reserved.</p>
