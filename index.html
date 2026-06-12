@@ -724,6 +724,75 @@
       color: rgba(244,237,228,0.2);
     }
 
+    /* ── HAMBURGER & MOBILE MENU ── */
+    .nav-right {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .nav-burger {
+      display: none;
+      flex-direction: column;
+      justify-content: center;
+      gap: 5px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 4px;
+    }
+
+    .nav-burger span {
+      display: block;
+      width: 22px;
+      height: 1.5px;
+      background: var(--deep);
+      transition: transform 0.25s, opacity 0.25s;
+      transform-origin: center;
+    }
+
+    .nav-burger.open span:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
+    .nav-burger.open span:nth-child(2) { opacity: 0; }
+    .nav-burger.open span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
+
+    .mobile-menu {
+      display: none;
+      position: fixed;
+      top: 60px;
+      left: 0; right: 0;
+      background: rgba(244, 237, 228, 0.97);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      z-index: 99;
+      flex-direction: column;
+      padding: 1.4rem 2rem 2rem;
+      border-bottom: 1px solid rgba(127, 166, 154, 0.15);
+      gap: 0;
+    }
+
+    .mobile-menu.open { display: flex; }
+
+    .mobile-menu a {
+      font-size: 0.8rem;
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--deep-soft);
+      text-decoration: none;
+      padding: 1rem 0;
+      border-bottom: 1px solid rgba(127, 166, 154, 0.12);
+      transition: color 0.2s;
+    }
+
+    .mobile-menu a:hover { color: var(--terra); }
+    .mobile-menu a:last-child { border-bottom: none; }
+
+    .mobile-menu-cta {
+      margin-top: 1rem;
+      color: var(--terra) !important;
+      border-bottom: none !important;
+      font-weight: 500 !important;
+    }
+
     /* ── RESPONSIVE ── */
 
     /* Tablet landscape */
@@ -754,6 +823,7 @@
       }
 
       .nav-links { display: none; }
+      .nav-burger { display: flex; }
 
       .nav-cta {
         font-size: 0.7rem;
@@ -783,7 +853,14 @@
       .philosophy-pull { font-size: 1.2rem; width: 200px; }
 
       /* About */
-      .about-photo { aspect-ratio: 1 / 1; max-width: 280px; border-radius: 50%; }
+      .about-photo {
+        aspect-ratio: 1 / 1;
+        max-width: 280px;
+        border-radius: 50%;
+      }
+      .about-photo img {
+        object-position: center 15%;
+      }
       .about-photo-wrap { display: flex; flex-direction: column; align-items: center; text-align: center; }
       .about-opening { font-size: 1.8rem; }
 
@@ -842,8 +919,22 @@
       <li><a href="#sessions">Sessions</a></li>
       <li><a href="#experience">Inside</a></li>
     </ul>
-    <a href="#join" class="nav-cta">Join Low Tide</a>
+    <div class="nav-right">
+      <a href="#join" class="nav-cta">Join Low Tide</a>
+      <button class="nav-burger" aria-label="Menu" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
   </nav>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#philosophy" onclick="closeMenu()">Philosophy</a>
+    <a href="#about" onclick="closeMenu()">About</a>
+    <a href="#sessions" onclick="closeMenu()">Sessions</a>
+    <a href="#experience" onclick="closeMenu()">Inside</a>
+    <a href="#join" onclick="closeMenu()" class="mobile-menu-cta">Join Low Tide</a>
+  </div>
 
   <!-- HERO -->
   <section class="hero" id="top">
@@ -1225,6 +1316,18 @@
   </footer>
 
   <script>
+    function toggleMenu() {
+      const menu = document.getElementById('mobileMenu');
+      const burger = document.querySelector('.nav-burger');
+      menu.classList.toggle('open');
+      burger.classList.toggle('open');
+    }
+
+    function closeMenu() {
+      document.getElementById('mobileMenu').classList.remove('open');
+      document.querySelector('.nav-burger').classList.remove('open');
+    }
+
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry, i) => {
         if (entry.isIntersecting) {
