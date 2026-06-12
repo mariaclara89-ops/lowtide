@@ -80,14 +80,17 @@
       font-size: 0.76rem;
       letter-spacing: 0.1em;
       text-transform: uppercase;
-      color: var(--white) !important;
+      color: var(--white);
       background: var(--terra);
       padding: 0.6rem 1.4rem;
       border-radius: 2rem;
-      transition: background 0.2s, transform 0.2s !important;
+      text-decoration: none;
+      white-space: nowrap;
+      flex-shrink: 0;
+      transition: background 0.2s, transform 0.2s;
     }
 
-    .nav-cta:hover { background: var(--terra-soft) !important; transform: translateY(-1px); }
+    .nav-cta:hover { background: var(--terra-soft); transform: translateY(-1px); }
 
     /* ── HERO ── */
     .hero {
@@ -722,6 +725,8 @@
     }
 
     /* ── RESPONSIVE ── */
+
+    /* Tablet landscape */
     @media (max-width: 1000px) {
       .sessions-grid { grid-template-columns: 1fr; }
       .resonates-grid { grid-template-columns: repeat(2, 1fr); }
@@ -730,22 +735,87 @@
       .about-photo { aspect-ratio: 4 / 3; max-width: 420px; }
     }
 
+    /* Tablet portrait */
     @media (max-width: 900px) {
       nav { padding: 1.2rem 2rem; }
-      .nav-links { gap: 1.4rem; }
+      .nav-links { gap: 1.2rem; }
 
       .philosophy-inner,
-      .experience-inner { grid-template-columns: 1fr; gap: 3.5rem; }
+      .experience-inner { grid-template-columns: 1fr; gap: 3rem; }
 
-      .philosophy-visual { height: 300px; }
+      .philosophy-visual { height: 280px; }
       .sessions-grid { grid-template-columns: 1fr; }
     }
 
-    @media (max-width: 600px) {
-      nav { padding: 1rem 1.4rem; }
+    /* Mobile */
+    @media (max-width: 680px) {
+      nav {
+        padding: 1rem 1.4rem;
+      }
+
       .nav-links { display: none; }
-      section { padding: 5rem 1.4rem; }
-      .resonates-grid { grid-template-columns: 1fr 1fr; }
+
+      .nav-cta {
+        font-size: 0.7rem;
+        padding: 0.5rem 1.1rem;
+      }
+
+      section { padding: 4.5rem 1.4rem; }
+
+      /* Hero */
+      .hero { padding: 7rem 1.4rem 4rem; }
+
+      .hero h1 { font-size: clamp(2.8rem, 12vw, 4rem); }
+
+      .hero-desc { font-size: 0.95rem; }
+
+      .hero-actions { flex-direction: column; align-items: center; }
+
+      .btn-primary,
+      .btn-secondary { width: 100%; max-width: 280px; text-align: center; }
+
+      /* Philosophy */
+      .philosophy-visual { height: 240px; }
+
+      .philosophy-circle--1 { width: 220px; height: 220px; top: 20px; left: 10px; }
+      .philosophy-circle--2 { width: 130px; height: 130px; bottom: 10px; right: 10px; }
+
+      .philosophy-pull { font-size: 1.2rem; width: 200px; }
+
+      /* About */
+      .about-photo { aspect-ratio: 1 / 1; max-width: 280px; border-radius: 50%; }
+      .about-photo-wrap { display: flex; flex-direction: column; align-items: center; text-align: center; }
+      .about-opening { font-size: 1.8rem; }
+
+      /* Sessions */
+      .sessions-header { margin-bottom: 2.5rem; }
+
+      /* Experience */
+      .experience-inner { gap: 2.5rem; }
+
+      /* Resonates */
+      .resonates-grid { grid-template-columns: 1fr 1fr; gap: 0.8rem; }
+      .resonates-card { padding: 1.8rem 1.2rem; }
+      .resonates-card-text { font-size: 1.1rem; }
+
+      /* Join */
+      .join { padding: 4.5rem 1.4rem; }
+
+      /* Footer */
+      .footer-links {
+        gap: 1.2rem;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .footer-logo { font-size: 1.4rem; }
+    }
+
+    /* Small phones */
+    @media (max-width: 380px) {
+      .resonates-grid { grid-template-columns: 1fr; }
+      .about-photo { max-width: 240px; }
+      .hero h1 { font-size: 2.6rem; }
     }
 
     /* ── SCROLL ANIMATIONS ── */
@@ -771,8 +841,8 @@
       <li><a href="#about">About</a></li>
       <li><a href="#sessions">Sessions</a></li>
       <li><a href="#experience">Inside</a></li>
-      <li><a href="#join" class="nav-cta">Join Low Tide</a></li>
     </ul>
+    <a href="#join" class="nav-cta">Join Low Tide</a>
   </nav>
 
   <!-- HERO -->
