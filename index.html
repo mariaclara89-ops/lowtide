@@ -336,30 +336,8 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
+      object-position: center top;
       display: block;
-    }
-
-    .about-photo-placeholder {
-      position: absolute;
-      inset: 0;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 0.6rem;
-    }
-
-    .about-photo-placeholder span {
-      font-size: 0.65rem;
-      letter-spacing: 0.18em;
-      text-transform: uppercase;
-      color: rgba(42, 58, 59, 0.3);
-    }
-
-    .about-photo-dot {
-      width: 40px; height: 40px;
-      border-radius: 50%;
-      border: 1px solid rgba(42, 58, 59, 0.15);
     }
 
     .about-name-block {
@@ -576,6 +554,15 @@
       letter-spacing: 0.08em;
       color: rgba(244, 237, 228, 0.4);
       font-weight: 300;
+    }
+
+    .experience-session-note {
+      font-size: 0.72rem;
+      letter-spacing: 0.06em;
+      color: rgba(244, 237, 228, 0.28);
+      font-weight: 300;
+      text-align: center;
+      margin-top: 0.4rem;
     }
 
     /* ── IF THIS RESONATES ── */
@@ -876,11 +863,7 @@
         <!-- Photo + name -->
         <div class="about-photo-wrap fade-up">
           <div class="about-photo">
-            <!-- Replace the placeholder below with: <img src="your-photo.jpg" alt="Clara" /> -->
-            <div class="about-photo-placeholder">
-              <div class="about-photo-dot"></div>
-              <span>Photo coming</span>
-            </div>
+            <img src="clara.jpg" alt="Clara, founder of Low Tide" />
           </div>
           <div class="about-name-block">
             <p class="about-name">Clara</p>
@@ -927,11 +910,14 @@
           </div>
 
           <p class="about-body">
-            When an injury kept me out of the ocean for almost a year, I found myself
-            searching for another way to create that same sense of space and reset.
-            Breathwork and meditation became an important part of that journey. They helped
-            me slow down, become more present, and approach life with a little more awareness
-            and a little less urgency.
+            When a surfing injury kept me out of the ocean for almost a year, everything changed.
+          </p>
+
+          <p class="about-body">
+            Without the water, I had to find another way back to that same sense of space
+            and reset. That's when breathwork and meditation became a real part of my life —
+            not as a wellness trend, but as a genuine lifeline. They helped me slow down,
+            stay present, and approach uncertainty with a little more ease and a little less urgency.
           </p>
 
           <p class="about-body">
@@ -1057,13 +1043,16 @@
             <div class="experience-card-sub">Breathwork</div>
           </div>
           <div class="experience-card">
-            <div class="experience-card-title">Be</div>
+            <div class="experience-card-title">Rest</div>
             <div class="experience-card-sub">Meditation</div>
           </div>
           <div class="experience-card">
             <div class="experience-card-title">Come as you are</div>
             <div class="experience-card-sub">No experience needed</div>
           </div>
+          <p class="experience-session-note">
+            A typical session: 20 min gentle movement &nbsp;·&nbsp; 20 min breathwork &nbsp;·&nbsp; 20 min meditation
+          </p>
         </div>
 
       </div>
@@ -1113,12 +1102,13 @@
   <!-- JOIN -->
   <section class="join" id="join">
     <div class="container--narrow fade-up">
-      <p class="section-label">Join Low Tide</p>
-      <h2 class="section-heading">Ready to breathe?</h2>
+      <p class="section-label">Join the Waitlist</p>
+      <h2 class="section-heading">Join the waitlist</h2>
       <p class="section-body">
-        Leave your email and we'll gently keep you updated on upcoming
-        sessions and future openings. No pressure. No urgency.
-        Just an open door whenever you feel ready.
+        Be the first to hear about upcoming sessions, workshops, and future openings.
+      </p>
+      <p class="section-body" style="margin-top:1rem;">
+        No pressure.<br />No urgency.<br />Just an open door whenever you're ready.
       </p>
 
       <form class="join-form" onsubmit="handleJoin(event)">
